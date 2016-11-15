@@ -1,7 +1,9 @@
 # react-calendar-test
 
 ## How to make this test run
+
 `npm install`
+
 `webpack-dev-server`
 
 Make sure to run `webpack-dev-server` on the root folder
