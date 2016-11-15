@@ -15,7 +15,7 @@ const initialState = {
   filters: {
     month: 'all',
     day: 'all',
-    publicHolidays: true
+    publicHolidays: false
   }
 }
 
