@@ -1,11 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Calendar extends Component {
-  render() {
-    return (
-      <div className="calendar-container">
-        <h1>Hello World</h1>
-      </div>
-    )
-  }
-}
+const Calendar = ({holidays}) => (
+  <div className="calendar-container">
+    {holidays.length > 0
+      ? <ul>
+          {holidays.map((holiday, i) => 
+            <li key={i}>
+              <p>{holiday.date}</p>
+              <p>{holiday.name}</p>
+
+            </li>
+          )}
+        </ul>
+      : <p>Nenhum feriado foi encontrado para esta data</p>
+    }   
+  </div>
+)
+
+export default Calendar

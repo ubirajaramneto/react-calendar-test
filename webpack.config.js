@@ -12,7 +12,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel', // 'babel-loader' is also a valid name to reference
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react', 'stage-2']
         }
       },
       {
@@ -20,7 +20,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel', // 'babel-loader' is also a valid name to reference
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react', 'stage-2']
         }
       }
     ]
